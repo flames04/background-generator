@@ -4,7 +4,7 @@ button {
     background: rgb(161, 159, 159)
 }
 
-div {
+body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
