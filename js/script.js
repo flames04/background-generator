@@ -9,14 +9,19 @@ const getRandomColorChannel = function(options=256) {
 // Here's a test number, check the console to see the result
 console.log( getRandomColorChannel() )
 
+let r = getRandomColorChannel();
+let g = getRandomColorChannel();
+let b = getRandomColorChannel();
 
+const colorBackground = `rgb(${r}, ${g}, ${b})`;
 
 // COMPLETE THE FOLLOWING STEPS
 
 // 1) Write an rgb-color string using `getRandomColorChannel()` that can be set as the value for `background-color` in CSS
-
+document.querySelector(`h1`).textContent = colorBackground;
 // 2) Update user interface (the `document`), setting the new colour string to the body's background-color property
 
+document.querySelector(`body`).style.backgroundColor = colorBackground;
 // 3) Use the three individual RGB numbers to update the HTML element "rgb(###, ####, ###)" (replacing ###s with the values)
 
 // 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test
