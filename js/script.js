@@ -7,7 +7,7 @@ const getRandomColorChannel = function(options=256) {
 }
 
 // Here's a test number, check the console to see the result
-console.log( getRandomColorChannel() )
+const setNewColour = function(){
 
 let r = getRandomColorChannel();
 let g = getRandomColorChannel();
@@ -23,6 +23,8 @@ document.querySelector(`h1`).textContent = colorBackground;
 
 document.querySelector(`body`).style.backgroundColor = colorBackground;
 document.querySelector(`button`).style.backgroundColor = colorBackground;
-// 3) Use the three individual RGB numbers to update the HTML element "rgb(###, ####, ###)" (replacing ###s with the values)
+}
 
-// 4) Wrap the entire procedure in a function named `setNewColour()`, call it multiple times from the `console` to test
+const theButton = document.querySelector(`button`);
+
+theButton.addEventListener(`click`, setNewColour);
