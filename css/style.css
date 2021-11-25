@@ -1,7 +1,7 @@
 button {
     font-size: 2em;
     padding: 1em;
-    background: rgb(161, 159, 159)
+    background: rgb(161, 159, 159, 0.5);
 }
 
 div {
